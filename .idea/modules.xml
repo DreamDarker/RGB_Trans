@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/PIL_trans.iml" filepath="$PROJECT_DIR$/.idea/PIL_trans.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/RGB_trans.iml" filepath="$PROJECT_DIR$/.idea/RGB_trans.iml" />
     </modules>
   </component>
 </project>
