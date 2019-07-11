@@ -1,10 +1,12 @@
 # coding:utf-8
 import os
 from PIL import Image
+
 # 源目录
-MyPath = 'C:/Users/12084/Desktop/Proj/data/test/mask/'
+MyPath = 'C:/Users/12084/Desktop/Proj/data/7-8 G/mask-raw/'
 # 输出目录
-OutPath = 'C:/Users/12084/Desktop/Proj/data/test/mask8/'
+OutPath = 'C:/Users/12084/Desktop/Proj/data/7-8 G/mask/'
+
 
 def processImage(filesoure, destsoure, name, imgtype):
     '''
@@ -22,11 +24,11 @@ def processImage(filesoure, destsoure, name, imgtype):
     height = im.size[1]
 
     for x in range(width):
-      for y in range(height):
-        if(im.getpixel((x, y))>0):
-           im.putpixel((x, y), 1)
-        else:
-            im.putpixel((x, y), 0)
+        for y in range(height):
+            if im.getpixel((x, y)) > 0:
+                im.putpixel((x, y), 1)
+            else:
+                im.putpixel((x, y), 0)
     im.save(destsoure + name, imgtype)
 
 
@@ -34,9 +36,9 @@ def run():
     # 切换到源目录，遍历源目录下所有图片
     os.chdir(MyPath)
     for i in os.listdir(os.getcwd()):
-        #检查后缀
+        # 检查后缀
         postfix = os.path.splitext(i)[1]
-        if  postfix == '.png':
+        if postfix == '.png':
             processImage(MyPath, OutPath, i, postfix)
 
 

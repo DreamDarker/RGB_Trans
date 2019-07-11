@@ -5,9 +5,9 @@ import cv2
 import os
 from PIL import Image
 # 源目录
-MyPath = 'C:/Users/12084/Desktop/Proj/data/7-8 G/image/'
+MyPath = 'C:/Users/12084/Desktop/Proj/data/an_img/img/'
 # 输出目录
-OutPath = 'C:/Users/12084/Desktop/Proj/data/7-8 G/img/'
+OutPath = 'C:/Users/12084/Desktop/Proj/data/an_img/img G/'
 
 def processImage(filesoure, destsoure, name):
     '''
@@ -29,7 +29,7 @@ def run():
     for i in os.listdir(os.getcwd()):
         #检查后缀
         postfix = os.path.splitext(i)[1]
-        if  postfix == '.jpg':
+        if  postfix == '.png':
             processImage(MyPath, OutPath, i)
 
 if __name__ == '__main__':

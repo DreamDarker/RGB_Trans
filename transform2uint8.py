@@ -3,8 +3,8 @@ import numpy as np
 import math
 import os
 
-path = 'C:/Users/12084/Desktop/Proj/data/7-5/mask/'
-newpath = 'C:/Users/12084/Desktop/Proj/data/7-5/mask/'
+path = 'C:/Users/12084/Desktop/Proj/data/7-11/mask/'
+newpath = 'C:/Users/12084/Desktop/Proj/data/7-11/mask8/'
 
 
 def toeight():
